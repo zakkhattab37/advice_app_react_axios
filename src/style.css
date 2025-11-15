@@ -109,3 +109,77 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transform: scale(0.95);
   color: aliceblue;
 }
+
+/* Media Queries for Phones */
+
+/* Large phones and small tablets (up to 768px) */
+@media screen and (max-width: 768px) {
+  .card {
+    width: 80%;
+    height: auto;
+    min-height: 30%;
+    padding: 8%;
+  }
+  
+  .heading {
+    height: auto;
+    font-size: 1.5rem;
+    padding: 20px;
+  }
+  
+  .cta span {
+    font-size: 16px;
+  }
+}
+
+/* Small phones (up to 480px) */
+@media screen and (max-width: 480px) {
+  .card {
+    width: 90%;
+    height: auto;
+    min-height: 35%;
+    padding: 10%;
+    border-radius: 20px;
+  }
+  
+  .heading {
+    height: auto;
+    font-size: 1.2rem;
+    padding: 15px;
+  }
+  
+  .cta {
+    padding: 10px 15px;
+  }
+  
+  .cta span {
+    font-size: 14px;
+  }
+  
+  .cta:before {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .cta svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+/* Extra small phones (up to 360px) */
+@media screen and (max-width: 360px) {
+  .card {
+    width: 95%;
+    padding: 12%;
+  }
+  
+  .heading {
+    font-size: 1rem;
+    padding: 10px;
+  }
+  
+  .cta span {
+    font-size: 10px;
+  }
+}

@@ -1,47 +1,48 @@
-@import url('https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=League+Spartan:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=League+Spartan:wght@100..900&display=swap");
 
-
-#root ,html,body {
-  height:   100vh;
+#root,
+html,
+body {
+  height: 100vh;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-.app{
+.app {
   height: 100%;
-  background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),  url(./images/logo.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(./images/logo.jpg);
   background-size: cover;
   background-position: center;
-  display: flex ;
-  justify-content: center;
-  align-items: center ;
-  text-align: center;
-}
-.card{
-background-color: rgba(245, 245, 245, 0.332);
-backdrop-filter: blur(3px);
-width: 40%;
-height: 25%;
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-border-radius: 25px;
-padding: 5%;
-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-}
-.heading{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 508px ;
- font-family: "Elms Sans", sans-serif;
+  text-align: center;
+}
+.card {
+  background-color: rgba(245, 245, 245, 0.332);
+  backdrop-filter: blur(1.5px);
+  width: 40%;
+  height: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 25px;
+  padding: 5%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 508px;
+  font-family: "Elms Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 594;
   font-style: italic;
 }
-/* From Uiverse.io by alexmaracinaru */ 
+/* From Uiverse.io by alexmaracinaru */
 .cta {
   position: relative;
   margin: auto;
@@ -50,7 +51,7 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border: none;
   background: none;
   cursor: pointer;
- font-family: "Elms Sans", sans-serif;
+  font-family: "Elms Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 594;
   font-style: italic;
@@ -98,14 +99,13 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 .cta:active:before {
   width: 100%;
   background: #091418;
- 
 }
 
 .cta:hover svg {
   transform: translateX(0);
 }
 
-.cta:active span{
+.cta:active span {
   transform: scale(0.95);
   color: aliceblue;
 }
@@ -120,13 +120,13 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     min-height: 30%;
     padding: 8%;
   }
-  
+
   .heading {
     height: auto;
     font-size: 1.5rem;
     padding: 20px;
   }
-  
+
   .cta span {
     font-size: 16px;
   }
@@ -141,26 +141,26 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 10%;
     border-radius: 20px;
   }
-  
+
   .heading {
     height: auto;
     font-size: 1.2rem;
     padding: 15px;
   }
-  
+
   .cta {
     padding: 10px 15px;
   }
-  
+
   .cta span {
     font-size: 14px;
   }
-  
+
   .cta:before {
     width: 40px;
     height: 40px;
   }
-  
+
   .cta svg {
     width: 18px;
     height: 18px;
@@ -170,15 +170,15 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 /* Extra small phones (up to 360px) */
 @media screen and (max-width: 360px) {
   .card {
-    width: 95%;
+    width: 80%;
     padding: 12%;
   }
-  
+
   .heading {
-    font-size: 1rem;
-    padding: 10px;
+    font-size: 1.4rem;
+    padding: 5px;
   }
-  
+
   .cta span {
     font-size: 14px;
   }
